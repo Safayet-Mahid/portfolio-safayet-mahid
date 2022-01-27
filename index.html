@@ -23,6 +23,12 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="./styles.css" />
 
+    <!-- ==================Swiper================= -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
     <title>Safayet Mahid</title>
   </head>
   <body>
@@ -444,10 +450,101 @@
       </section>
 
       <!--=============== WORK ===============-->
-      <section class="work section" id="work"></section>
+      <section class="work section" id="work">
+        <span class="section__subtitle">My Portfolio</span>
+        <h2 class="section__title">Recent Works</h2>
+        <div class="work__filters">
+          <span class="work__item active-work" data-filter="all">All</span>
+          <span class="work__item" data-filter=".web">Web</span>
+          <span class="work__item" data-filter=".mobile">Mobile</span>
+          <span class="work__item" data-filter=".design">Design</span>
+        </div>
+
+        <div class="work__container container grid">
+          <div class="work__card mix web">
+            <img src="./assests/Images/work1.jpg" class="work__img" alt="" />
+            <h3 class="work__title">Web design</h3>
+            <a href="" class="work__button">
+              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+          <div class="work__card mix mobile">
+            <img src="./assests/Images/work2.jpg" class="work__img" alt="" />
+            <h3 class="work__title">App Mobile</h3>
+            <a href="" class="work__button">
+              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+          <div class="work__card mix design">
+            <img src="./assests/Images/work3.jpg" class="work__img" alt="" />
+            <h3 class="work__title">Brand design</h3>
+            <a href="" class="work__button">
+              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+          <div class="work__card mix web">
+            <img src="./assests/Images/work4.jpg" class="work__img" alt="" />
+            <h3 class="work__title">Web design</h3>
+            <a href="" class="work__button">
+              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+          <div class="work__card mix mobile">
+            <img src="./assests/Images/work5.jpg" class="work__img" alt="" />
+            <h3 class="work__title">App Mobile</h3>
+            <a href="" class="work__button">
+              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+        </div>
+      </section>
 
       <!--=============== TESTIMONIALS ===============-->
-      <section class="testimonial section"></section>
+      <section class="testimonial section">
+        <span class="section__subtitle">My clients say</span>
+        <h2 class="section__title">Testimonials</h2>
+        <div class="testimonial__container container swiper">
+          <div class="swiper-wrapper">
+            <div class="testimonial__card swiper-slide">
+              <img
+                src="./assests/Images/testimonial1.png"
+                alt=""
+                class="testimonial__img"
+              />
+              <h3 class="testimonial__name">Jhin Doe</h3>
+              <p class="destimonial__description">
+                A really good job, all aspects of the project were followed step
+                by step and with good results.
+              </p>
+            </div>
+            <div class="testimonial__card swiper-slide">
+              <img
+                src="./assests/Images/testimonial2.png"
+                alt=""
+                class="testimonial__img"
+              />
+              <h3 class="testimonial__name">Paula Vusy</h3>
+              <p class="destimonial__description">
+                A really good job, all aspects of the project were followed step
+                by step and with good results.
+              </p>
+            </div>
+            <div class="testimonial__card swiper-slide">
+              <img
+                src="./assests/Images/testimonial3.png"
+                alt=""
+                class="testimonial__img"
+              />
+              <h3 class="testimonial__name">Sara Cill</h3>
+              <p class="destimonial__description">
+                A really good job, all aspects of the project were followed step
+                by step and with good results.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
 
       <!--=============== CONTACT ===============-->
       <section class="contact section" id="contact"></section>
@@ -459,11 +556,11 @@
     <!--=============== SCROLLREVEAL ===============-->
     <script src=""></script>
 
-    <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
+    <!--=============== SWIPER JS =================-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
     <!--=============== MIXITUP FILTER ===============-->
-    <script src=""></script>
+    <script src="./mixitup.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="./main.js"></script>
