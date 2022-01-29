@@ -59,7 +59,7 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
         el: ".swiper-pagination",
         clickable: true,
     },
-    brakpoints: {
+    breakpoints: {
         576: {
             slidesPerView: 2
         },
@@ -132,6 +132,20 @@ const sr = ScrollReveal({
     // reset:true
 })
 
+sr.reveal(`.section__subtitle`, { delay: 700 })
+sr.reveal(`.section__title`, { delay: 700 })
 sr.reveal(`.home__data`)
 sr.reveal(`.home__handle`, { delay: 700 })
 sr.reveal(`.home__social,.home__scroll`, { delay: 900, origin: "bottom" })
+sr.reveal(`.about__img`, { delay: 500, origin: "left" })
+sr.reveal(`.about__data`, { delay: 900, origin: "right" })
+sr.reveal(`.about__description`, { delay: 1200, origin: "bottom" })
+sr.reveal(`.first`, { delay: 800, origin: "left" })
+sr.reveal(`.second`, { delay: 900, origin: "right" })
+sr.reveal(`.skills__box`, { delay: 2200, origin: "bottom" })
+sr.reveal(`.services__card`, { delay: 800, origin: "bottom" })
+sr.reveal(`.work__filters`, { delay: 700, origin: "left" })
+sr.reveal(`.work__container`, { delay: 900, origin: "bottom" })
+sr.reveal(`.swiper`, { delay: 700, origin: "bottom" })
+sr.reveal(`.left`, { delay: 900, origin: "left" })
+sr.reveal(`.right`, { delay: 900, origin: "right" })

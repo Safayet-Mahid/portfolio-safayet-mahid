@@ -225,7 +225,6 @@ body.light-theme {
   background-color: var(--body-color);
   z-index: var(--z-fixed);
   transition: 0.4s /* For light mode animation*/;
-  height: var(--header-height);
 }
 .nav {
   height: var(--header-height);
@@ -637,16 +636,14 @@ body.light-theme {
   color: var(--body-color);
 }
 /*=============== TESTIMONIAL ===============*/
-.testimonial__container {
+.testimonial {
+  padding: 1rem;
 }
-
 .testimonial__card {
   background-color: var(--container-color);
   padding: 1.25rem 1.5rem;
   border-radius: 1.5rem;
   margin-bottom: 3rem;
-  /* margin-left: 1rem;
-  margin-right: 1rem; */
 }
 
 .testimonial__img {
@@ -670,6 +667,7 @@ body.light-theme {
 .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--first-color);
 }
+
 /*=============== CONTACT ===============*/
 .contact__container {
   row-gap: 3rem;
@@ -921,8 +919,9 @@ body.light-theme {
     margin-bottom: 3.5rem;
   }
   .nav {
-    height: calc(var(--header-height)+1rem);
+    height: calc(var(--header-height) + 1rem);
   }
+
   .home__handle {
     width: 290px;
     height: 400px;
