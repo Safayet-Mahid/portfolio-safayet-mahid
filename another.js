@@ -1,4 +1,6 @@
-
+const sendEmail = () => {
+    alert(`Please send me an email directly using the "write me ->" button from the email section!`)
+}
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
 
 let mixerPortfolio = mixitup('.work__container', {
