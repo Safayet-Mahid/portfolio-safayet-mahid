@@ -327,6 +327,13 @@ div:hover ~ #cursor {
 }
 .home__img {
   width: 160px;
+  display: inline-block;
+  position: absolute;
+  top: 15%;
+  transform: scale(3);
+  padding: 6rem 0.5rem 0;
+  /* box-shadow: 8px 8px 10px #aaa; */
+  filter: grayscale(40%);
 }
 
 .home__handle {
@@ -346,9 +353,7 @@ div:hover ~ #cursor {
 }
 .home__handle-body {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding: 0 1rem;
   text-align: center;
 }
@@ -358,12 +363,15 @@ div:hover ~ #cursor {
 .wrapper {
   padding: 10px;
   margin: 0 auto;
-  width: 500px;
+
+  border-radius: 1rem;
+  justify-self: center;
   text-align: center;
   position: absolute;
-  top: 60%;
-  left: 50%;
+  top: 87%;
+  left: 25%;
   transform: translate(-16%, -50%);
+  background-color: rgba(0, 0, 0, 0.301);
 }
 .home__handle-body .item {
   visibility: hidden;
@@ -385,14 +393,14 @@ div:hover ~ #cursor {
   align-items: flex-end;
   font-weight: bold;
   color: var(--second-hue);
+  color: white;
 }
 .home__handle-body div::after {
   content: "";
   width: 10px;
   height: 4px;
   display: block;
-  /* background: black; */
-  /* color: black; */
+
   margin-bottom: 4px;
   margin-left: 2px;
   animation-duration: 350ms;
@@ -937,6 +945,9 @@ div:hover ~ #cursor {
   .work__filters {
     column-gap: 0.25rem;
   }
+  .home__img {
+    padding: 4rem 0.5rem 0;
+  }
 }
 
 /* For medium devices */
@@ -947,6 +958,7 @@ div:hover ~ #cursor {
     right: 0;
     margin: 0 auto;
   }
+
   .about__info {
     grid-template-columns: repeat(3, 140px);
     justify-content: center;
@@ -1089,5 +1101,10 @@ div:hover ~ #cursor {
     font-size: 1.25rem;
     padding: 0.4rem;
     border-radius: 0.5rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .cursor__outer {
+    display: none;
   }
 }
