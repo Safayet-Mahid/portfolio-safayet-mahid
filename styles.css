@@ -691,9 +691,51 @@ div:hover ~ #cursor {
 .work__img {
   border-radius: 1rem;
   margin-bottom: 0.75rem;
-  min-height: 200px;
-  min-width: 300px;
+  height: 200px;
+  width: 300px;
+  overflow-y: hidden;
+  position: relative;
 }
+
+.work__img img{
+  position: absolute;
+  height: auto;
+  -webkit-transition: top 5s;
+	-moz-transition: top 5s;
+	-ms-transition: top 5s;
+	-o-transition: top 5s;
+	transition: bottom 5s;
+  /* bottom: -250px; */
+}
+
+
+.work__img img:hover{
+  bottom: 0px;
+  -webkit-transition: top 5s;
+	-moz-transition: top 5s;
+	-ms-transition: top 5s;
+	-o-transition: top 5s;
+	transition: bottom 5s;
+}
+.work__img video{
+ overflow: hidden;
+ object-fit: cover;
+}
+/* scrooling  */
+.booking{
+  bottom: -150px;
+}
+.food-fiesta{
+  bottom: -500px;
+}
+.socialbook{
+  bottom: -810px;
+}
+.portfolio-one{
+  bottom: -550px;
+}
+
+/* ============== */
 .work__title {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
