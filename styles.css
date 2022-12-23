@@ -734,7 +734,12 @@ div:hover ~ #cursor {
 .portfolio-one{
   bottom: -550px;
 }
-
+.klassy-cafe{
+  bottom: -450px;
+}
+.do-it{
+  /* height:auto ; */
+}
 /* ============== */
 .work__title {
   font-size: var(--normal-font-size);
